@@ -28,8 +28,8 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 
 # Load .env from the workspace root, fallback to current file location
-load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"), override=True)
-load_dotenv(override=True)
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"), override=False)
+load_dotenv(override=False)
 
 # ===================== CONFIG =====================
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", None)
