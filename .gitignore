@@ -1,0 +1,5 @@
+.venv/
+received_files/
+translated_files/
+.env
+*.json
